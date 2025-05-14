@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 6 - Web Technology - I</title>
+    <link rel="stylesheet" href="rojit.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="rojit.html">Home</a></li>
+                <li><a href="chapter1.html">Chapter 1</a></li>
+                <li><a href="chapter2.html">Chapter 2</a></li>
+                <li><a href="chapter3.html">Chapter 3</a></li>
+                <li><a href="chapter4.html">Chapter 4</a></li>
+                <li><a href="chapter5.html">Chapter 5</a></li>
+                <li><a href="chapter6.html">Chapter 6</a></li>
+                <li><a href="chapter7.html">Chapter 7</a></li>
+                <li><a href="chapter8.html">Chapter 8</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Chapter 6: Web Technology - I</h1>
+
+        <section>
+            <h2>Introduction to Web Technology</h2>
+            <p>Web technology refers to the tools, languages, and techniques used to create websites and web applications. In today's digital age, web technologies are an integral part of almost every business and daily task, from e-commerce to social media, entertainment, and much more.</p>
+            <p>In this chapter, we will explore the basic building blocks of web technology, including HTML, CSS, and JavaScript.</p>
+
+            <h2>1. HTML - The Structure of Web Pages</h2>
+            <p>HTML (HyperText Markup Language) is the standard language used to create and structure content on the web. It provides the basic framework for web pages, allowing text, images, videos, and other elements to be displayed on a webpage.</p>
+            
+            <h3>Basic HTML Structure</h3>
+            <p>A typical HTML document is structured with the following basic elements:</p>
+            <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+    &lt;p&gt;This is a simple HTML page.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+            </pre>
+            <p>Here, the <code>&lt;html&gt;</code> tag represents the start of the document, the <code>&lt;head&gt;</code> contains metadata and information like the title, and the <code>&lt;body&gt;</code> holds the content that is displayed to the user.</p>
+
+            <h3>Common HTML Tags</h3>
+            <ul>
+                <li><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>: Header tags used for headings (h1 is the largest, and h6 is the smallest).</li>
+                <li><code>&lt;p&gt;</code>: Paragraph tag used for text.</li>
+                <li><code>&lt;img&gt;</code>: Image tag used to insert images.</li>
+                <li><code>&lt;a&gt;</code>: Anchor tag used to create hyperlinks.</li>
+                <li><code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code>: Tags used to create unordered and ordered lists.</li>
+                <li><code>&lt;div&gt;</code>: A container element used to group other elements together for styling and layout purposes.</li>
+            </ul>
+
+            <h2>2. CSS - Styling Web Pages</h2>
+            <p>CSS (Cascading Style Sheets) is used to style and layout web pages. It allows web designers to apply styles such as colors, fonts, spacing, and positioning to HTML elements. CSS makes websites more visually appealing and improves the user experience.</p>
+            
+            <h3>Basic CSS Syntax</h3>
+            <p>The CSS syntax is quite simple and consists of selectors and declarations:</p>
+            <pre>
+selector {
+    property: value;
+}
+            </pre>
+            <p>For example:</p>
+            <pre>
+h1 {
+    color: blue;
+    font-size: 24px;
+}
+            </pre>
+            <p>This code will make all <code>&lt;h1&gt;</code> elements appear in blue color and have a font size of 24 pixels.</p>
+
+            <h3>Common CSS Properties</h3>
+            <ul>
+                <li><strong>color:</strong> Sets the color of text.</li>
+                <li><strong>font-family:</strong> Specifies the font to be used for text.</li>
+                <li><strong>background-color:</strong> Sets the background color of an element.</li>
+                <li><strong>margin:</strong> Adds space outside an element.</li>
+                <li><strong>padding:</strong> Adds space inside an element, between its content and its border.</li>
+                <li><strong>border:</strong> Defines the border style for an element.</li>
+                <li><strong>display:</strong> Specifies how an element is displayed (e.g., block, inline, flex, etc.).</li>
+            </ul>
+
+            <h2>3. JavaScript - Adding Interactivity</h2>
+            <p>JavaScript is a programming language that allows you to add interactivity and dynamic behavior to your web pages. It enables you to create features like form validation, animations, dynamic content loading, and more.</p>
+
+            <h3>Basic JavaScript Syntax</h3>
+            <p>JavaScript is typically embedded within an HTML page or linked externally. Here's an example of basic JavaScript syntax:</p>
+            <pre>
+&lt;script&gt;
+  alert("Hello, World!");
+&lt;/script&gt;
+            </pre>
+            <p>The above code will display a pop-up alert with the message "Hello, World!" when the page is loaded.</p>
+
+            <h3>Common JavaScript Functions</h3>
+            <ul>
+                <li><code>alert()</code>: Displays an alert dialog with a message.</li>
+                <li><code>document.getElementById()</code>: Retrieves an element from the DOM (Document Object Model) by its ID.</li>
+                <li><code>console.log()</code>: Outputs information to the browser's console (useful for debugging).</li>
+                <li><code>addEventListener()</code>: Adds an event listener to an element (e.g., for click events, key presses, etc.).</li>
+            </ul>
+
+            <h3>Example: JavaScript with HTML</h3>
+            <p>Here’s an example of using JavaScript to change the content of an HTML element when a button is clicked:</p>
+            <pre>
+&lt;button onclick="changeContent()"&gt;Click Me!&lt;/button&gt;
+
+&lt;div id="content"&gt;Original Content&lt;/div&gt;
+
+&lt;script&gt;
+function changeContent() {
+  document.getElementById("content").innerHTML = "New Content";
+}
+&lt;/script&gt;
+            </pre>
+            <p>When the button is clicked, the text inside the <code>&lt;div&gt;</code> with ID "content" will change from "Original Content" to "New Content".</p>
+
+            <h2>Conclusion</h2>
+            <p>In this chapter, we covered the three fundamental web technologies: HTML, CSS, and JavaScript. HTML provides the structure of a web page, CSS is used for styling and layout, and JavaScript adds interactivity and dynamic features. Understanding these technologies is the foundation of web development and will allow you to create simple static websites and dynamic web applications.</p>
+        </section>
+    </main>
+</body>
+</html>

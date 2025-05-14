@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 2 - Number System, Conversion, and Boolean Logic</title>
+    <link rel="stylesheet" href="rojit.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="rojit.html">Home</a></li>
+                <li><a href="chapter1.html">Chapter 1</a></li>
+                <li><a href="chapter2.html">Chapter 2</a></li>
+                <li><a href="chapter3.html">Chapter 3</a></li>
+                <li><a href="chapter4.html">Chapter 4</a></li>
+                <li><a href="chapter5.html">Chapter 5</a></li>
+                <li><a href="chapter6.html">Chapter 6</a></li>
+                <li><a href="chapter7.html">Chapter 7</a></li>
+                <li><a href="chapter8.html">Chapter 8</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Chapter 2: Number System, Conversion, and Boolean Logic</h1>
+
+        <section>
+            <h2>Introduction</h2>
+            <p>In this chapter, we will explore the fundamental concepts of the number system, number conversions, and Boolean logic, which are the building blocks of digital systems and computers.</p>
+        </section>
+
+        <section>
+            <h2>Number Systems</h2>
+            <p>A number system is a writing system for expressing numbers; it is a mathematical notation for representing numbers in a consistent manner using digits or other symbols. Common types of number systems include:</p>
+            <ul>
+                <li><strong>Binary System:</strong> Base 2, uses digits 0 and 1.</li>
+                <li><strong>Octal System:</strong> Base 8, uses digits from 0 to 7.</li>
+                <li><strong>Decimal System:</strong> Base 10, uses digits from 0 to 9.</li>
+                <li><strong>Hexadecimal System:</strong> Base 16, uses digits 0-9 and letters A-F.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Number System Conversion</h2>
+            <p>Number system conversion refers to the process of converting a number from one base to another. Here's how to convert between different number systems:</p>
+
+            <h3>Binary to Decimal</h3>
+            <p>To convert a binary number to decimal, multiply each bit by 2 raised to the power of its position and sum the results. For example:</p>
+            <pre>
+                1011 (binary) = 1 * 2^3 + 0 * 2^2 + 1 * 2^1 + 1 * 2^0
+                             = 8 + 0 + 2 + 1 = 11 (decimal)
+            </pre>
+
+            <h3>Decimal to Binary</h3>
+            <p>To convert a decimal number to binary, repeatedly divide the number by 2, recording the remainders, and read the remainders from bottom to top. For example:</p>
+            <pre>
+                11 (decimal) ÷ 2 = 5 remainder 1
+                5 ÷ 2 = 2 remainder 1
+                2 ÷ 2 = 1 remainder 0
+                1 ÷ 2 = 0 remainder 1
+                11 (decimal) = 1011 (binary)
+            </pre>
+
+            <h3>Binary to Hexadecimal</h3>
+            <p>To convert a binary number to hexadecimal, group the binary digits into sets of four (starting from the right) and convert each group into its hexadecimal equivalent. For example:</p>
+            <pre>
+                101101 (binary) = 0010 1101
+                                = 2 D (hexadecimal)
+            </pre>
+        </section>
+
+        <section>
+            <h2>Boolean Logic</h2>
+            <p>Boolean logic is the basis of digital circuits and is used for decision-making in computers. It uses variables that can only have two values: true (1) and false (0). The basic operations of Boolean logic are:</p>
+            <ul>
+                <li><strong>AND:</strong> The result is true if both operands are true. (A AND B)</li>
+                <li><strong>OR:</strong> The result is true if at least one operand is true. (A OR B)</li>
+                <li><strong>NOT:</strong> Inverts the value of the operand. (NOT A)</li>
+                <li><strong>XOR:</strong> The result is true if one operand is true and the other is false. (A XOR B)</li>
+            </ul>
+            <p>Boolean expressions can be simplified using laws such as:</p>
+            <ul>
+                <li><strong>Identity Law:</strong> A AND 1 = A, A OR 0 = A</li>
+                <li><strong>Null Law:</strong> A AND 0 = 0, A OR 1 = 1</li>
+                <li><strong>Complement Law:</strong> A AND NOT A = 0, A OR NOT A = 1</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
